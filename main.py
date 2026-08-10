@@ -5,30 +5,29 @@ df1=pd.read_csv(r"C:\Users\LENOVO\OneDrive\Desktop\ML\IPL-Data-Analysis\deliveri
 
 df2=pd.read_csv(r"C:\Users\LENOVO\OneDrive\Desktop\ML\IPL-Data-Analysis\matches.csv",encoding="latin1")
 
-#print("Dataset of Deliveries")
-#print(df1.head())
+print("Dataset of Deliveries")
+print(df1.head())
 
-#print("Dataset of matches")
-#print(df2.head())
+print("Dataset of matches")
+print(df2.head())
 
-'''print("Deliveries Columns")
-#print(df1.columns)
-#print(df1.info())
+print("Deliveries Columns")
+print(df1.columns)
+print(df1.info())
 
 group=df1.groupby('batsman')['total_runs'].sum()
-#print(group)
+print(group)
 
 sorted_list=group.sort_values(ascending=False)
-#print(sorted_list)
+print(sorted_list)
 
 print(sorted_list.head(10))
 
 print("Matches Columns")
-#print(df2.columns)
+print(df2.columns)
 print(df2.info())
-'''
 
-'''runs=df1.groupby('bowler')['total_runs'].sum()
+runs=df1.groupby('bowler')['total_runs'].sum()
 balls=df1.groupby('bowler')['total_runs'].count()
 print(runs)
 print(balls)
@@ -74,7 +73,7 @@ wins = (
            .rename(columns={'winner': 'team'})
 )
 print(wins)
-'''
+
 
 # 4. Combine matches played and wins
 team_stats = matches_played.merge(
@@ -102,7 +101,7 @@ team_stats = team_stats.sort_values(
 
 # 9. Display result
 print(team_stats)
-'''
+
 
 
 
